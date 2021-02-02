@@ -1,0 +1,26 @@
+﻿<Window x:Class="RejestracjaCzasuPracy.NewFilePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RejestracjaCzasuPracy"
+        mc:Ignorable="d"
+        Title="NewFilePage" Height="450" Width="260">
+    <Grid PreviewKeyDown="Grid_PreviewKeyDown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Path: " Grid.Row="0" Grid.Column="0"/>
+        <Label Content="Name: " Grid.Row="1" Grid.Column="0"/>
+        <TextBox x:Name="tbox_path"  Grid.Row="0" Grid.Column="1" Width="200" Height="25" Background="LightGray" TabIndex="0"/>
+        <TextBox x:Name="tbox_name" Grid.Row="1" Grid.Column="1" Width="200" Height="25" Background="LightGray" TabIndex="1"/>
+        <Button x:Name="btn_create" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan ="3" HorizontalAlignment="Stretch"  Content="Stwórz" Margin="40" Click="btn_create_Click" />
+    </Grid>
+</Window>
