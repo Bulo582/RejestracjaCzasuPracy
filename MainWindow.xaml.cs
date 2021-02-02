@@ -159,6 +159,7 @@ namespace RejestracjaCzasuPracy
                 }
                 else
                 {
+                    isExitingApp = true;
                     Process.Start("notepad.exe", path);
                     Application.Current.Shutdown();
                 }
